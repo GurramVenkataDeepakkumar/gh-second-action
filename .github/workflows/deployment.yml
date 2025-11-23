@@ -12,7 +12,7 @@ jobs:
           node-version: '18'
       - name: Install Dependencies
         run: npm install
-      - name:: Run Test Cases
+      - name: Run Test Cases
         run: npm test
   deployment:
     runs-on: ubuntu-latest
