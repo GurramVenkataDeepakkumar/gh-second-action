@@ -11,7 +11,7 @@ jobs:
         with:
           node-version: '18'
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
       - name: Run Test Cases
         run: npm test
   deployment:
@@ -24,8 +24,8 @@ jobs:
         with:
           node-version: '18'
       - name: Install Dependencies
-        run: npm install  
+        run: npm ci  
       - name: Build Project
-        run: npm run Build
+        run: npm run build
       - name: Deploy the Project
         run: echo "Deployment Successful"
